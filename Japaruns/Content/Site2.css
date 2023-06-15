@@ -1,0 +1,293 @@
+﻿/*body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}*/
+
+/* Set padding to keep content from hitting the edges */
+/*.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}*/
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+
+
+
+
+/*.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: #777;
+    border-color: #fff
+}*/
+@font-face {
+    font-family: 'Mclaren';
+    src:url(../Fonts/McLaren-Regular.ttf);
+}
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url(../Fonts/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url(../Fonts/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: 'Lato-Italic';
+    src: url(../Fonts/Lato-Italic.ttf);
+}
+@font-face {
+    font-family: 'Lato-Black';
+    src: url(../Fonts/Lato-Black.ttf);
+}
+.myMclaren{ font-family:Mclaren}
+.myLatoRegular{ font-family:Lato-Regular;}
+.myLatoBold {
+    font-family: Lato-Bold;
+}
+.myLatoItalic {
+    font-family: Lato-Italic;
+}
+.myLatoBlack {
+    font-family: Lato-Black;
+}
+@keyframes typing {
+    0.0000%, 27.3488% {
+        content: "";
+    }
+
+    1.1395%, 26.2093% {
+        content: "g";
+    }
+
+    2.2791%, 25.0698% {
+        content: "gr";
+    }
+
+    3.4186%, 23.9302% {
+        content: "gro";
+    }
+
+    4.5581%, 22.7907% {
+        content: "groc";
+    }
+
+    5.6977%, 21.6512% {
+        content: "groce";
+    }
+
+    6.8372%, 20.5116% {
+        content: "grocer";
+    }
+
+    7.9767%, 19.3721% {
+        content: "grocery";
+    }
+
+    9.1163%, 18.2326% {
+        content: "grocery  ";
+    }
+    10.2558%, 17.0930% {
+        content: "grocery  s";
+    }
+    11.3958%, 15.9536% {
+        content: "grocery  sh";
+    }
+    12.5345%, 14.8141% {
+        content: "grocery  sho";
+    }
+    13.6748%, 13.6746% {
+        content: "grocery  shop";
+    }
+
+    30.7674%, 51.2791% {
+        content: "";
+    }
+
+    31.9070%, 50.1395% {
+        content: "p";
+    }
+
+    33.0465%, 49.0000% {
+        content: "pa";
+    }
+
+    34.1860%, 47.8605% {
+        content: "pay";
+    }
+
+    35.3256%, 46.7209% {
+        content: "pay ";
+    }
+
+    36.4651%, 45.5814% {
+        content: "pay u";
+    }
+
+    37.6047%, 44.4419% {
+        content: "pay ut";
+    }
+
+    38.7442%, 43.3024% {
+        content: "pay uti";
+    }
+    39.8838%, 42.1629% {
+        content: "pay util";
+    }
+    41.0234%, 41.0234% {
+        content: "pay utili";
+    }
+    42.1630%, 39.8839% {
+        content: "pay utilit";
+    }
+    43.3026%, 38.7444% {
+        content: "pay utility";
+    }
+    44.4422%, 37.6049% {
+        content: "pay utility ";
+    }
+ /*   45.5818%, 36.4654% {
+        content: "pay utility b";
+    }
+    46.7214%, 35.3259% {
+        content: "pay utility bi";
+    }
+    47.8610%, 34.1864% {
+        content: "pay utility bil";
+    }
+    49.0006%, 33.0469% {
+        content: "pay utility bill";
+    }
+    50.1402%, 31.9074% {
+        content: "pay utility bills";
+
+    }*/
+
+   /* 54.6977%, 75.2093% {
+        content: "";
+    }
+
+    55.8372%, 74.0698% {
+        content: "i";
+    }
+
+    56.9767%, 72.9302% {
+        content: "in";
+    }
+
+    58.1163%, 71.7907% {
+        content: "inn";
+    }
+
+    59.2558%, 70.6512% {
+        content: "inno";
+    }
+
+    60.3953%, 69.5116% {
+        content: "innov";
+    }
+
+    61.5349%, 68.3721% {
+        content: "innova";
+    }
+
+    62.6743%, 67.2326% {
+        content: "innovat";
+    }
+
+    63.8138%, 66.0931% {
+        content: "innovato";
+    }
+
+    64.9533%, 64.9536% {
+        content: "innovator";
+    }*/
+
+    /* 78.6279%, 96.8605% {
+        content: "";
+    }
+
+    79.7674%, 95.7209% {
+        content: "h";
+    }
+
+    80.9070%, 94.5814% {
+        content: "hu";
+    }
+
+    82.0465%, 93.4419% {
+        content: "hum";
+    }
+
+    83.1860%, 92.3023% {
+        content: "huma";
+    }
+
+    84.3256%, 91.1628% {
+        content: "human";
+    }*/
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.typewriter {
+    --caret: currentcolor;
+}
+
+    .typewriter::before {
+        content: "";
+        animation: typing 13.5s infinite;
+    }
+
+    .typewriter::after {
+        content: "";
+        border-right: 1px solid var(--caret);
+        animation: blink 0.5s linear infinite;
+    }
+
+    .typewriter.thick::after {
+        border-right: 1ch solid var(--caret);
+    }
+
+    .typewriter.nocaret::after {
+        border-right: 0;
+    }
+
+
+@media (prefers-reduced-motion) {
+    .typewriter::after {
+        animation: none;
+    }
+
+    @keyframes sequencePopup {
+        0%, 100% {
+            content: "grocery  shop";
+        }
+
+        50% {
+            content: "pay utility bills";
+        }
+
+        75% {
+            content: "reader";
+        }
+
+        95% {
+            content: "human";
+        }
+    }
+
+    .typewriter::before {
+        content: "developer";
+        animation: sequencePopup 12s linear infinite;
+    }
+}

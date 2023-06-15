@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    <style>
+        .arrow {
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+        }
+
+        .right {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+
+        .left {
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+        }
+    </style>
+</head>
+<body>
+    @*<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-success">
+            <div class=" container">
+                <a class="navbar-brand" href="#"> <img src="~/imgs/JRLogo1.png" alt="Logo"  style="width:30px; height:auto" class="d-inline-block align-text-top">Japaruns</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Log In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Register</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>*@
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-success" id="list-example">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="~/imgs/JRLogo1.png" alt="Logo" style="width:30px; height:auto" class="d-inline-block align-text-top" /><span class="myMclaren text-white"> Japaruns</span></a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white ">
+                    <li class="nav-item">
+                        <a class="nav-link  myLatoRegular text-white" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link myLatoRegular text-white" href="#aboutus">About Us</a>
+                    </li>
+
+                    <li class="nav-item mx-1">
+                        <a class="nav-link myLatoRegular text-white" href="#services">Services </a>
+                    </li>
+                    <li class="nav-item  mx-1">
+                        <a class="nav-link myLatoRegular text-white" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link myLatoRegular text-white" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link myLatoRegular text-white" href="#">Log In</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link myLatoRegular text-white" href="#">Register</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class=" scrollspy-example w-100">
+
+        @RenderBody()
+
+
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

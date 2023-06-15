@@ -1,0 +1,303 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout= "~/Views/Shared/_Main.cshtml";
+
+
+<style>
+        #home {
+            padding-top: 70px;
+            padding-bottom: 50px;
+            background-color:  white;
+        }
+
+        #aboutus {
+            padding-top: 100px;
+            padding-bottom: 50px;
+           /* background-color: palegreen;*/
+        }
+
+        #services {
+            padding-top: 100px;
+            padding-bottom: 50px;
+            background-color: #F0F1F3;
+        }
+
+        #faq {
+            padding-top: 100px;
+            padding-bottom: 50px;
+            background-color: aquamarine;
+        }
+        .colorGreen { color: #048455; }
+        .colorgrey {
+            color: #455A64;
+        }
+        .bgcolorLightGreen {
+            background-color: #048455
+        }
+        .path { stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: dash 3s linear forwards; animation-iteration-count: 1;animation-delay: 1s;}
+@@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.dashed{
+  stroke-dasharray: 5,12;
+
+}
+#arrow{animation: arrow 2s linear forwards; opacity:0;}
+@@keyframes arrow {
+  to {
+    opacity: 1;
+  }
+}
+
+        .arrow {
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+        }
+
+        .right {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+
+        .left {
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+        }
+        .text-justify{
+            text-align:justify !important;
+        }
+    a.nav-link.active {
+           border: transparent;
+        border-bottom: 4px solid  white !important;
+        /*border: solid red;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;*/
+      /*  transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);*/
+    }
+        a.nav-link.active:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+           /* margin: 0 auto;*/
+            width: 0;
+            height: 0;
+            border-top: 25px solid #6A0136;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+        }
+    </style>}
+
+<section id="home" class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h1 class="mt-4 myMclaren   colorGreen fw-bold  lh-base ">
+         Effortlessly Get Task <br />Done In Nigeria From<br /> Wherever You Are
+            </h1>
+            <h3 class="myLatoBold fw-bold">Let us help you&nbsp; <span class="colorgrey  myLatoRegular typewriter"></span></h3>
+          <div class=" row mt-4">
+              <div class="col-md mb-3">
+                  <a href="#" class="btn btn-success w-100"><i class="fa fa-running"></i>&nbsp;Create Run</a>
+              </div>
+              <div class="col-md">
+                  <a href="#" class="btn  btn-outline-success w-100"><i class="fa   fa-bell"></i>Fulfill Run</a>
+              </div>
+             
+            
+          </div>
+       
+          @*<div class="d-flex flex-row">
+              <a href="#" class="btn  btn-outline-success w-100">Request Task</a>
+              <a href="#" class="btn  btn-outline-success w-100">Request Task</a>
+          </div>*@
+        </div>
+        <div class="col-md-6">
+            <img src="~/imgs/Online connection.gif" class="img-fluid mt-2 mb-3" />
+          
+            @*<lottie-player src="https://assets5.lottiefiles.com/packages/lf20_h4mjsyjz.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop controls autoplay></lottie-player>
+            <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_5tl1xxnz.json" background="transparent" speed="1" style="width: 100%; height: 400px;" loop autoplay></lottie-player>*@
+
+        </div>
+    </div>
+</section>
+<section id="aboutus" class="container-fluid  bgcolorLightGreen">
+    <div class="d-flex justify-content-center">
+        <h3 class="myMclaren text-white"><span class="arrow  left border-white"></span><span class="arrow  left border-white"></span>About Us<span class="arrow right  border-white"></span><span class="arrow right  border-white"></span> </h3>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class=" col-md-6  text-white order-lg-1">
+                <p class=" myLatoItalic  h5 " style=" text-align:justify; line-height:30px">
+                    At JapaRuns, we aim to bridge the gap between Nigerians living abroad and Nigerians residing in Nigeria by providing a seamless platform for sending errands and tasks across borders. We understand that even when you're far away, there are times when you need someone trustworthy and reliable to assist your loved ones or handle important matters back home.
+                    With our web app, you can easily create service requests or errands that need to be completed in Nigeria.
+                </p>
+                <p class="  myLatoItalic h5 " style=" text-align:justify; line-height:30px">
+                    Our network of verified service providers in Nigeria ensures that your tasks are handled professionally and efficiently. From everyday errands to special requests, our platform connects you with reliable individuals who are ready to help.
+
+                    <br />The best part is, you only get to pay when you confirm that the job has been done and you approve the payment. This way, you are sure to get value for your resources invested.
+                </p>
+            </div>
+            <div class=" col-md-6 d-flex justify-content-center order-lg-0 ">
+                <img src="~/imgs/AboutUsGreen.gif" class="img-fluid " style="width:400px;height:auto" />
+            </div>
+
+        </div>
+    </div>
+</section>
+<section id="services" class="container-fluid">
+    <div class="d-flex justify-content-center">
+        <h3 class="myMclaren colorGreen "><span class="arrow  left  border-success"></span><span class="arrow  left  border-success"></span>Services<span class="arrow right   border-success"></span><span class="arrow right   border-success"></span></h3>
+    </div>
+    <div class="row my-0">
+        <div class="col-md">
+            <div class="graph__wrapper">
+                @*315px*@
+                <svg width="" height="107px" viewBox="0 0 315 107" version="1.1" style="overflow:visible; width:50% !important">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                        <path id="Path-1" class="path" fill="none" stroke="#048455" stroke-width="5" stroke-linejoin="round" stroke-miterlimit="10" d="M1.4,2.1c0,0,86,57,211.5,41.5s172.5-24.5,289,81" />
+
+                        <path class="dashed" fill="none" stroke="#F0F0F0" stroke-width="8" stroke-linejoin="round" stroke-miterlimit="10" d="M1.4,2.1c0,0,86,57,211.5,41.5s172.5-24.5,289,81" />
+
+                        <polyline id="arrow" points="0,-9 18,0 0,9 5,0" fill="#048455">
+                            <animateMotion rotate="auto" begin="1s" dur="1.6s" repeatCount="1" fill="freeze">
+                                <mpath xlink:href="#Path-1" />
+                            </animateMotion>
+                        </polyline>
+
+                    </g>
+                </svg>
+            </div>
+        </div>
+        <div class="col-md"></div>
+    </div>
+<div class="row">
+    <div class="col-md">
+        <ul class="nav nav-pills   justify-content-center rounded-5 mb-3  " id="pills-tab" role="tablist" style="--bs-nav-link-color:#048455; --bs-nav-pills-link-active-color: white; --bs-nav-pills-link-active-bg:#048455; ">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link rounded-5 active myLatoItalic" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Run Types</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link rounded-5 myLatoItalic" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Find Runs</button>
+            </li>
+         
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">...
+                <div class="container">
+                    <div class="row  row-cols-lg-3 ">
+                        <div class="col-md-4 mb-lg-3 mb-2">
+                            <div class="card shadow-sm border-bottom  border-5 rounded-end h-100 ">
+                                <img src="~/imgs/Online Groceries-broNEW.png" class="img-fluid  card-img-top mx-auto" style="width:250px;height:auto;" />
+                                <div class="card-body">
+                                    <h6 class="myMclaren colorGreen">Grocery Shopping and Delivery</h6>
+                                    <p class=" card-text myLatoRegular small text-justify">
+                                        Need someone to handle  grocery shopping and deliver the items to a doorstep in Nigeria?
+                                    </p>
+                                </div>
+                                <div class="card-footer bgcolorLightGreen">
+                                    <h6 class="text-white">Request</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4  mb-lg-3 mb-2">
+                            <div class="card shadow-sm border-bottom  border-5 rounded-end h-100">
+                                <img src="~/imgs/Payment Information-bro.png" class="img-fluid  card-img-top mx-auto" style="width:250px;height:auto;" />
+                                <div class="card-body">
+                                    <h6 class="myMclaren colorGreen">Bill Payments & Financial Transactions</h6>
+                                    <p class=" card-text myLatoRegular small text-justify">
+                                        Looking for someone to handle  bill payments and financial transactions such as  utility bills, airtime etc?
+                                    </p>
+                                </div>
+                                <div class="card-footer bgcolorLightGreen">
+                                    <h6 class="text-white myMclaren">Request</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4  mb-lg-3 mb-2">
+                            <div class="card shadow-sm border-bottom  border-5 rounded-end h-100">
+                                <img src="~/imgs/Gifts.gif" class="img-fluid  card-img-top mx-auto" style="width:250px;height:auto;" />
+                                <div class="card-body">
+                                    <h6 class="myMclaren colorGreen">Gift Purchasing and Delivery</h6>
+                                    <p class=" card-text myLatoRegular small text-justify">
+                                        Need assistance in purchasing and delivering a special gift to a loved one in Nigeria?
+                                    </p>
+                                </div>
+                                <div class="card-footer bgcolorLightGreen">
+                                    <h6 class="text-white myLatoBold">Request</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4  mb-lg-3 mb-2">
+                            <div class="card shadow-sm border-bottom  border-5 rounded-end h-100">
+                                <img src="~/imgs/Build your home-amicoNEW.png" class="img-fluid  card-img-top mx-auto " style="width:250px;height:auto;" />
+                                <div class="card-body">
+                                    <h6 class="myMclaren colorGreen">Home Maintenance and Repairs</h6>
+                                    <p class=" card-text myLatoRegular small text-justify">
+                                        Do you require someone to handle home maintenance and repairs tasks such as plumbing, electrical works, carpentry, painting , cleaning etc?
+                                    </p>
+                                </div>
+                                <div class="card-footer bgcolorLightGreen">
+                                    <h6 class="text-white myLatoBold">Request</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4  mb-lg-3 mb-2">
+                            <div class="card shadow-sm border-bottom  border-5 rounded-end h-100">
+                                <img src="~/imgs/Folder.gif" class="img-fluid  card-img-top mx-auto " style="width:250px;height:auto;" />
+                                <div class="card-body">
+                                    <h6 class="myMclaren colorGreen">Document Retrieval and Submission</h6>
+                                    <p class=" card-text myLatoRegular small text-justify">
+
+                                        Are you seeking assistance with document retrieval or submission in Nigeria? This may involve obtaining official documents or submitting paperwork to government agencies.
+                                    </p>
+                                </div>
+                                <div class="card-footer bgcolorLightGreen">
+                                    <h6 class="text-white myLatoBold"><i class="fa  fa-running"></i> Create Run</h6>
+                                    <a href="#" class="text-white myLatoBold"><i class="fa  fa-running"></i> Create Run</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card shadow-sm border-bottom  border-5 rounded-end h-100">
+                                <img src="~/imgs/Thinking face (1).gif" class="img-fluid  card-img-top mx-auto " style="width:250px;height:auto;" />
+                                <div class="card-body">
+                                    <h6 class="myMclaren colorGreen">My Custom Request</h6>
+                                    <p class=" card-text myLatoRegular small text-justify">
+
+                                   Create a customised run request to get a task done in Nigeria, such as  checkup on a loved one, help with  research(academics) or any other task that may be required.
+                                    </p>
+                                </div>
+                                <div class="card-footer bgcolorLightGreen">
+                                    <h6 class="text-white myLatoBold"><i class="fa  fa-running"></i> Create Run</h6>
+                                    @*<a href="#" class="text-white myLatoBold"><i class="fa  fa-running"></i> Create Run</a>*@
+                                    @Html.ActionLink("hey","how","Home")
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+               
+                    
+                </div>
+            
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
+          
+        </div>
+    </div>
+</div>
+
+</section>
+<section id="faq"></section>
+<section id="footer"></section>
